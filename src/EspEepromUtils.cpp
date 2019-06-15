@@ -2,6 +2,8 @@
 #include "EspEepromUtils.h"
 
 #include <ESP.h>
+#include <EEPROM.h>
+#include <WString.h>
 
 void EspEepromUtils::wipeEEPROM() {
 	for (uint16_t i = 0 ; i < 4096; i++) {
