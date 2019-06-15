@@ -1,0 +1,21 @@
+#######################################
+# Syntax Coloring Map For Keyboard
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+EspEepromUtils	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+wipeEEPROM	KEYWORD2
+writeEEPROM	KEYWORD2
+readEEPROM KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
