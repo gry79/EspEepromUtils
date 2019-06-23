@@ -21,7 +21,11 @@ void EspEepromUtils::writeEEPROM(uint16_t addr, long data) {
 }
 
 void EspEepromUtils::writeEEPROM(uint16_t addr, double data) {
-	writeEEPROM(addr, String(data));
+	writeEEPROM(addr, data, 4);
+}
+
+void EspEepromUtils::writeEEPROM(uint16_t addr, double data, uint8_t precision) {
+	writeEEPROM(addr, String(data, precision));
 }
 
 void EspEepromUtils::writeEEPROM(uint16_t addr, uint8_t data) {

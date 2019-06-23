@@ -9,6 +9,7 @@ class EspEepromUtils {
   static void writeEEPROM(uint16_t, unsigned long);
   static void writeEEPROM(uint16_t, long);
   static void writeEEPROM(uint16_t, double);
+  static void writeEEPROM(uint16_t, double, uint8_t);
   static void writeEEPROM(uint16_t, uint8_t);
   static void writeEEPROM(uint16_t, String);
   static String readEEPROM(uint16_t);
