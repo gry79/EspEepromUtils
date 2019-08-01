@@ -6,6 +6,8 @@
 class EspEepromUtils {
   public:
   static void wipeEEPROM();
+  static void writeEEPROM(uint16_t, unsigned int);
+  static void writeEEPROM(uint16_t, int);
   static void writeEEPROM(uint16_t, unsigned long);
   static void writeEEPROM(uint16_t, long);
   static void writeEEPROM(uint16_t, double);

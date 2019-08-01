@@ -12,6 +12,14 @@ void EspEepromUtils::wipeEEPROM() {
 	EEPROM.commit();
 }
 
+void EspEepromUtils::writeEEPROM(uint16_t addr, unsigned int data) {
+	writeEEPROM(addr, String(data));
+}
+
+void EspEepromUtils::writeEEPROM(uint16_t addr, int data) {
+	writeEEPROM(addr, String(data));
+}
+
 void EspEepromUtils::writeEEPROM(uint16_t addr, unsigned long data) {
 	writeEEPROM(addr, String(data));
 }
